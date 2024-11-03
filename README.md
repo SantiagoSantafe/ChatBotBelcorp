@@ -4,9 +4,9 @@ Este repositorio contiene el código fuente del proyecto ChatBotBelcorp. El proy
 
 ## Estructura del Proyecto
 
-- **/src**: Contiene el código fuente principal del chatbot.
-- **/tests**: Contiene los tests para el código fuente.
-- **/docs**: Contiene la documentación del proyecto.
+- **/app.py**: Contiene el código principal que corre los servicios API de whatsapp.
+- **/services**: Contiene el codigo de la lógica de negocio.
+- **/sett**: Contiene los secrets del repositorio y configuraciones globales.
 
 ## Requisitos
 
@@ -27,10 +27,11 @@ Este repositorio contiene el código fuente del proyecto ChatBotBelcorp. El proy
     ```bash
     pip install -r requirements.txt
     ```
-
-## Uso
-
-Para ejecutar el chatbot, utiliza el siguiente comando:
-
-```bash
-python src/main.py
+Haz uso de POSTMAN junto con JSON para enviar tus mensajes por whatsapp luego de las configuraciones en Meta Business Suite
+```json
+curl -i -X POST `
+  https://graph.facebook.com/v20.0/503431269513746/messages `
+  -H 'Authorization: Bearer EAAbsmFU0KS4BO3zXg8ZATUfjl3xWGwZAupE5xwGv4TlOAJ2XFK7XpxrCZCzH7fbfWwHIL8AZCZA1WjeASavRFcMJZCTQrvsjFVCZCMGdJlleI2MPavI9Q8nSYZADHV04lMYZBUI1USOqZAPlxw3QQZBOgWHiWvopeyINBvIks3okg0boJfDQvnsqFdgCkFvlAcLnF0rdSTN6YLEosmgNUuUR8o4XQu2xE8ZD' `
+  -H 'Content-Type: application/json' `
+  -d '{ \"messaging_product\": \"whatsapp\", \"to\": \"*TU NUMERO CELULAR REGISTRADO EN META*\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }'
+```
