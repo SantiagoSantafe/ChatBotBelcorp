@@ -1,8 +1,8 @@
 token = 'bigdateros'
 
-whatsapp_token = 'EAAbsmFU0KS4BO5rGAQpXS83QuTMRTDk6ieFCcj57SEZCXXBnZAVWjXFptBRzkbcQIQupvHvqA7Au7ZAs0k971MjfuJzZCd4N1wF10VEfGu2p8jducdedMn2IUOZCnXwKPgfgmKF1oJmOvB3AT2xnAbYwqbjFORfvUHJ6m15wm2ARLpqW9ccIrmlNMQqMCzEd9jlNiK0wtWEiSzpsze08NnVPPdwZDZD'
+whatsapp_token = 'TU WHATSAPP TOKEN' #LO ENCUENTRAS EN META BUSINESS FOR DEVELOPERS
 
-whatsapp_url = 'https://graph.facebook.com/v20.0/503431269513746/messages'
+whatsapp_url = 'TU WHATSAPP URL'#LO ENCUENTRAS EN META BUSINESS FOR DEVELOPERS
 
 stickers = {
     "poyo_feliz": 984778742532668,
@@ -19,5 +19,3 @@ stickers = {
     "gato_triste": 210492141865964,
     "gato_cansado": 1021308728970759
 }
-
-document_url = "https://www.africau.edu/images/default/sample.pdf"
